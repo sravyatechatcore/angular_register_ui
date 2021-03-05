@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION FORM</title>
+        <link rel="stylesheet" href="regis.css" type="text/css">
+        
+    </head>
+    <body>
+        <div class="main">
+            <div class="register">
+                <h2>REGISTRATION FORM</h2>
+                <form id="register" method="post" onsubmit="display()">
+                    <label>FirstName: </label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <input type="text"  id="FirstName" placeholder="enter your first name">
+                    <br><br>
+                    <label>LastName: </label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <input type="text" name="lname" id="LastName" placeholder="enter your lastname">
+                    <br><br>
+                    <label>Age: </label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <input type="Number" name="age" id="Age" placeholder="How old are you?">
+                    <br><br>
+                    <label>Email: </label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <input type="text" name="email" id="Email" placeholder="Enter your valid email">
+                    <br><br>
+                    <label>Password: </label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <input type="password" name="Password" id="Password" placeholder="Enter your password">
+                    <br><br>
+                    <label>ConfirmPassword: </label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <input type="Confirmpassword" name="confirmpassword" id="ConfirmPassword" placeholder="please re enter the password">
+                    <br><br>
+                    &nbsp;&nbsp;
+                    <input type="submit"  name="submit" id="submit" onclick="display()"></input>
+                    
+
+                
+                </form>
+            </div>
+        </div>
+    
+
+    </body>
+    <script>
+        alert("Registration Details");
+    function display()
+    {
+    
+        
+    var FirstName= document.getElementById('FirstName').value;
+    var LastName = document.getElementById('LastName').value;
+    var Age= document.getElementById('Age').value;
+     var Email= document.getElementById('Email').value;
+      var Password= document.getElementById('Password').value;
+    var ConfirmPassword= document.getElementById('ConfirmPassword').value;
+    document.write(FirstName+"<br>"+LastName+"<br>"+Age+"<br>"+Email+"<br>"+Password+"<br>"+ConfirmPassword);
+    
+    }
+    </script>
+    
+</html>

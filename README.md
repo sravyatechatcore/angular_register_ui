@@ -1,1 +1,5 @@
-# angular_register_ui
+# Registration form and it retrives values.
+
+_____
+
+
